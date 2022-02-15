@@ -63,7 +63,15 @@ Public Class PdfTextExtractorUI
             If Not Directory.Exists(newFolderPath) Then
                 Directory.CreateDirectory(newFolderPath)
             End If
-            File.Move(fi.FullName, Path.Combine(newFolderPath, fi.Name))
+            If File.Exists(Path.Combine(newFolderPath, fi.Name)) Then
+                File.Move(fi.FullName, Path.Combine(newFolderPath,
+                                        Path.GetFileNameWithoutExtension(fi.Name) & "-" &
+                                        DateTime.Now.Ticks.ToString &
+                                        Path.GetExtension(fi.Name)))
+            Else
+                File.Move(fi.FullName, Path.Combine(newFolderPath, fi.Name))
+            End If
+
         Next fi
     End Sub
 End Class
