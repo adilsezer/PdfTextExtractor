@@ -12,3 +12,5 @@ PdfTextExtractor is a Windows OS based VB.NET WinForms application that enable u
 
 ## Screenshot
 Main Application GUI
+
+![Alt text](https://github.com/sezerad/PdfTextExtractor/blob/main/PdfTextExtractor/Screenshots/PdfTextExtractorGUI.PNG?raw=true "PdfTextExtractor")
