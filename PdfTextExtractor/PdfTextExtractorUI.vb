@@ -39,7 +39,7 @@ Public Class PdfTextExtractorUI
         Dim txtFile As String = Path.Combine(Path.GetDirectoryName(fileName), Path.GetFileNameWithoutExtension(fileName) & ".txt")
         FileWriter.WriteTxtFile(txtFile, pdfText)
         MoveTxtToFolder()
-        LogTextBox.Text += $"Txt file created for {fileName}" + Environment.NewLine()
+        LogTextBox.Text += $"Txt file created for {Path.GetFileNameWithoutExtension(fileName)}" + Environment.NewLine()
     End Sub
 
     Private Function MovePDFToProcessingFolder(fileName As String) As String
