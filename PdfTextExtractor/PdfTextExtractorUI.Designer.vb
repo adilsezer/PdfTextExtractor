@@ -84,11 +84,11 @@ Partial Class PdfTextExtractorUI
         Me.TableLayoutPanel1.SetColumnSpan(Me.FolderLabel, 4)
         Me.FolderLabel.Dock = System.Windows.Forms.DockStyle.Right
         Me.FolderLabel.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FolderLabel.Location = New System.Drawing.Point(5, 0)
+        Me.FolderLabel.Location = New System.Drawing.Point(30, 0)
         Me.FolderLabel.Name = "FolderLabel"
-        Me.FolderLabel.Size = New System.Drawing.Size(312, 33)
+        Me.FolderLabel.Size = New System.Drawing.Size(287, 33)
         Me.FolderLabel.TabIndex = 1
-        Me.FolderLabel.Text = "Select a folder to automatically detect and convert PDF files"
+        Me.FolderLabel.Text = "Select a folder to watch PDF files and extract their text"
         Me.FolderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'FolderButton
